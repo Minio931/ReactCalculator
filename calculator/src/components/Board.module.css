@@ -1,0 +1,26 @@
+.board {
+  width: 500px;
+  height: 600px;
+  background-color: #efe9f4;
+  margin-top: 10%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.display {
+  width: 90%;
+  height: 125px;
+  margin-top: 5%;
+  background-color: #42cafd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.display p {
+  margin: 5px;
+  font-size: 1.5rem;
+}
