@@ -16,11 +16,16 @@
   background-color: #42cafd;
   border-radius: 10px;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .display p {
+  width: 100%;
+  text-align: right;
   margin: 5px;
   font-size: 1.5rem;
+  overflow: hidden;
 }

@@ -1,12 +1,8 @@
 import styles from "./Key.module.css";
-import { useDispatch } from "react-redux";
-import { calculatorActions } from "../store/calculator-slice";
 
 const Key = (props) => {
-  const dispatch = useDispatch();
-
   const addItemsHandler = () => {
-    dispatch(calculatorActions.getInput(props.name));
+    props.onChange(props.name);
   };
 
   const className = props.className ? `${styles.action}` : `${styles.key}`;
