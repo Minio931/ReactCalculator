@@ -23,6 +23,7 @@ const Board = () => {
         dispatch(calculatorActions.getNumber(numbers));
       }
 
+      console.log(item);
       dispatch(calculatorActions.getSigns(item));
       dispatch(calculatorActions.calculate());
       equation = "";
@@ -31,9 +32,14 @@ const Board = () => {
       setShowResult(true);
       if (equation !== "") {
         let numbers = parseFloat(equation);
+        equation = "";
         dispatch(calculatorActions.getNumber(numbers));
       }
       dispatch(calculatorActions.equlas());
+    } else if (item === "C") {
+      setDisplay(null);
+      dispatch(calculatorActions.clear());
+      equation = "";
     } else {
       equation += item;
       setDisplay(equation);
